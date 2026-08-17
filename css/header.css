@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background: #171a21;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+}
+
+.logo h1{
+    font-size: 28px;
+}
+
+.pesquisa input{
+
+    width: 450px;
+
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2b2f38;
+    color: white;
+}
+
+.btn-adicionar{
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2f80ed;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+
+.btn-adicionar:hover{
+    background: #1d6fde;
+}

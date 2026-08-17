@@ -1,0 +1,188 @@
+.jogos{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 20px 40px;
+}
+.card-jogo{
+    background: #171a21;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+.card-jogo:hover{
+    transform: translateY(-5px);
+}
+.capa-jogo{
+    width: 100%;
+    height: 220px;
+}
+
+.capa-jogo img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+.info-jogo{
+    padding: 18px;
+}
+
+.info-jogo h2{
+    color: white;
+
+    margin-bottom: 12px;
+}
+.players,
+.preco{
+    color: #b8bcc5;
+
+    margin-bottom: 8px;
+}
+.possui{
+    margin-top: 15px;
+}
+
+.possui p{
+    color: white;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.possui ul{
+    list-style: none;
+
+    padding: 0;
+}
+.possui-jogo{
+    color: #4ade80;
+
+    margin-bottom: 5px;
+}
+
+.nao-possui-jogo{
+    color: #f87171;
+
+    margin-bottom: 5px;
+}
+
+.btn-detalhes{
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2f80ed;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-detalhes:hover{
+    background: #1d6fde;
+}
+.adicionar-jogo {
+    padding: 30px 40px;
+}
+
+.adicionar-jogo h2 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.adicionar-jogo p {
+    color: #b8bcc5;
+    margin-bottom: 15px;
+}
+
+.busca-steam {
+    display: flex;
+    gap: 10px;
+}
+
+.busca-steam input {
+    width: 300px;
+
+    padding: 12px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2b2f38;
+    color: white;
+}
+
+.busca-steam button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2f80ed;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.resultado-jogo {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 25px;
+
+    max-width: 600px;
+
+    padding: 15px;
+
+    background: #171a21;
+
+    border-radius: 12px;
+}
+
+.resultado-jogo img {
+    width: 200px;
+
+    border-radius: 8px;
+}
+
+.dados-jogo {
+    color: white;
+}
+
+.dados-jogo h3 {
+    margin-bottom: 10px;
+}
+
+.dados-jogo button {
+    margin-top: 15px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2f80ed;
+    color: white;
+
+    cursor: pointer;
+}

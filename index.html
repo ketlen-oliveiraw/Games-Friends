@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Games Friends</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+   <header class="header">
+      
+          <div class="logo">
+            <h1>Games Friends</h1>
+          </div>
+
+          <div class="pesquisa">
+            <input type="text" placeholder="pesquise jogos ou amigos">
+          </div>
+
+          <button class="bnt-adicionar">
+            + Adicionar jogo
+          </button>
+   </header>
+   
+   <main>
+       
+    <section class="filtros">
+      
+        <button class="filtro ativo">
+            Todos
+        </button>
+
+        <button class="filtro">
+            Multiplayer
+        </button>
+
+        <button class="filtro">
+            Gratuitos
+        </button>
+
+        <button class="filtro">
+            Queremos comprar
+        </button>
+
+        <button class="filtro">
+            Todo mundo possui
+        </button>
+
+    </section>
+
+    <section class="adicionar-jogo">
+        <h2>Adicionar jogo</h2>
+        <p>
+            Digite o App ID do jogo na Steam
+        </p>
+
+        <div class="busca-steam">
+            <input
+                type="number"
+                id="steamAppId"
+                placeholder="Ex: 440"
+            >
+            <button id="buscarSteam">
+                Buscar na Steam
+            </button>
+
+        </div>
+
+        <div id="resultadoSteam"></div>
+
+    </section>
+    
+    <section class="jogos" id="listaJogos">
+
+    </section>
+
+   </main>
+
+</body>
+
+<script src="js/app.js"></script>
+
+</html>

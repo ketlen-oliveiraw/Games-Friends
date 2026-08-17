@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #20242d;
+}
+
+.filtros{
+    display: flex;
+    gap: 10px;
+
+    padding: 25px 40px;
+
+    background: #20242d;
+}
+
+.filtros{
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2b2f38;
+    color: #b8bcc5;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.filtro:hover{
+    background: #353a45;
+    color:white;
+}
+
+.filtro.ativo{
+    background:#2f80ed;
+    color:white;
+}
