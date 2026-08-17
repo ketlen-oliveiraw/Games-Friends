@@ -120,7 +120,7 @@ function adicionarJogo(jogo) {
             <h2>${jogo.name}</h2>
 
             <p class="preco">
-                💰 ${preco}
+                 ${preco}
             </p>
 
 
