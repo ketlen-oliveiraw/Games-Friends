@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Games Friends</title>
+    <title>Games Friends | Seus jogos, sua galera</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -14,77 +15,160 @@
 </head>
 
 <body>
-   <header class="header">
-      
-          <div class="logo">
-            <h1>Games Friends</h1>
-          </div>
+    <header class="header">
+        <a class="logo" href="#inicio" aria-label="Games Friends - Início">
+            <span class="logo-games">GAMES</span>
+            <span class="logo-friends">FRIENDS</span>
+        </a>
 
-          <div class="pesquisa">
-            <input type="text" placeholder="pesquise jogos ou amigos">
-          </div>
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a class="nav-link ativo" href="#inicio">Início</a>
+            <a class="nav-link" href="#pesquisar">Pesquisar</a>
+            <a class="nav-link" href="#lista">Lista</a>
+        </nav>
 
-          <button class="bnt-adicionar">
-            + Adicionar jogo
-          </button>
-   </header>
-   
-   <main>
-       
-    <section class="filtros">
-      
-        <button class="filtro ativo">
-            Todos
+        <button class="perfil" type="button" aria-label="Perfil do usuário">
+            <span>GF</span>
         </button>
+    </header>
 
-        <button class="filtro">
-            Multiplayer
-        </button>
+    <main>
+        <section class="pagina inicio" id="inicio">
+            <div class="inicio-conteudo">
+                <span class="etiqueta">SEU GRUPO. SEUS JOGOS.</span>
 
-        <button class="filtro">
-            Gratuitos
-        </button>
+                <h1>Jogar junto é <span>muito melhor.</span></h1>
 
-        <button class="filtro">
-            Queremos comprar
-        </button>
+                <p>
+                    Descubra quais jogos seus amigos possuem, encontre
+                    novas aventuras para jogar em grupo e organizem
+                    a próxima partida.
+                </p>
 
-        <button class="filtro">
-            Todo mundo possui
-        </button>
+                <div class="inicio-acoes">
+                    <a class="botao-principal" href="#pesquisar">
+                        Explorar jogos
+                    </a>
 
-    </section>
+                    <a class="botao-secundario" href="#lista">
+                        Ver nossa lista
+                    </a>
+                </div>
 
-    <section class="adicionar-jogo">
-        <h2>Adicionar jogo</h2>
-        <p>
-            Digite o App ID do jogo na Steam
-        </p>
+                <div class="inicio-destaques">
+                    <div>
+                        <strong>01</strong>
+                        <span>Descubra jogos</span>
+                    </div>
 
-        <div class="busca-steam">
-            <input
-                type="number"
-                id="steamAppId"
-                placeholder="Ex: 440"
-            >
-            <button id="buscarSteam">
-                Buscar na Steam
-            </button>
+                    <div>
+                        <strong>02</strong>
+                        <span>Confira quem possui</span>
+                    </div>
 
-        </div>
+                    <div>
+                        <strong>03</strong>
+                        <span>Monte sua próxima partida</span>
+                    </div>
+                </div>
+            </div>
 
-        <div id="resultadoSteam"></div>
+            <div class="inicio-visual" aria-hidden="true">
+                <div class="visual-card visual-card-fundo">
+                    <span>PLAYER 02</span>
+                    <div class="visual-simbolo">+</div>
+                </div>
 
-    </section>
-    
-    <section class="jogos" id="listaJogos">
+                <div class="visual-card visual-card-frente">
+                    <span class="visual-status">
+                        <span></span> PARTIU JOGAR?
+                    </span>
 
-    </section>
+                    <div class="controle">🎮</div>
 
-   </main>
+                    <h2>GG, amigos!</h2>
+                    <p>A próxima aventura começa aqui.</p>
+                </div>
 
+                <span class="decoracao decoracao-1">✳</span>
+                <span class="decoracao decoracao-2">+</span>
+            </div>
+        </section>
+
+        <section class="pagina pesquisa-pagina" id="pesquisar">
+            <div class="secao-cabecalho">
+                <span class="etiqueta">DESCUBRA SUA PRÓXIMA AVENTURA</span>
+                <h2>Encontre seu próximo <span>jogo.</span></h2>
+                <p>Pesquise pelo nome e descubra novas possibilidades para jogar com a galera.</p>
+            </div>
+
+            <div class="pesquisa-jogos">
+                <span class="icone-pesquisa" aria-hidden="true">⌕</span>
+
+                <input
+                    type="search"
+                    id="pesquisaNome"
+                    placeholder="Digite o nome de um jogo..."
+                    autocomplete="off"
+                    aria-label="Pesquisar jogo pelo nome"
+                >
+
+                <button id="buscarPorNome" type="button">
+                    Pesquisar
+                </button>
+            </div>
+
+            <div id="resultadosPesquisa" class="resultados-pesquisa"></div>
+
+            <section class="adicionar-jogo" aria-labelledby="tituloAdicionar">
+                <h3 id="tituloAdicionar">Adicionar por App ID</h3>
+                <p>Área temporária para testar a integração atual com a Steam.</p>
+
+                <div class="busca-steam">
+                    <input
+                        type="number"
+                        id="steamAppId"
+                        placeholder="Ex.: 440"
+                    >
+
+                    <button id="buscarSteam" type="button">
+                        Buscar na Steam
+                    </button>
+                </div>
+
+                <div id="resultadoSteam"></div>
+            </section>
+        </section>
+
+        <section class="pagina lista-pagina" id="lista">
+            <div class="secao-cabecalho">
+                <span class="etiqueta">NOSSO CATÁLOGO</span>
+                <h2>Os jogos da <span>galera.</span></h2>
+                <p>Um espaço para organizar os jogos do grupo e descobrir quem tem cada um.</p>
+            </div>
+
+            <div class="lista-controles">
+                <input
+                    type="search"
+                    id="filtroLista"
+                    placeholder="Filtrar jogos da lista..."
+                    aria-label="Filtrar jogos da lista"
+                >
+
+                <span class="lista-status">NOSSA COLEÇÃO</span>
+            </div>
+
+            <section class="jogos" id="listaJogos"></section>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="rodape-logo" href="#inicio">GAMES FRIENDS<span>.</span></a>
+        <p>Feito para reunir a galera em torno dos jogos.</p>
+    </footer>
+
+   <script src="js/storage.js"></script>
+   <script src="js/app.js"></script>
 </body>
-
-<script src="js/app.js"></script>
 
 </html>

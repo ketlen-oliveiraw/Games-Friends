@@ -1,0 +1,100 @@
+
+@media (max-width: 900px) {
+    .header {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .navegacao {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        gap: 28px;
+        padding-bottom: 8px;
+    }
+
+    .inicio {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .inicio-visual {
+        min-height: 330px;
+    }
+
+    .inicio-conteudo h1 {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 560px) {
+    .header {
+        padding: 12px 5%;
+    }
+
+    .navegacao {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 0.82rem;
+    }
+
+    .pagina {
+        padding: 55px 5%;
+    }
+
+    .inicio-conteudo h1 {
+        font-size: 2.7rem;
+        letter-spacing: -1px;
+    }
+
+    .inicio-destaques {
+        gap: 18px;
+    }
+
+    .inicio-destaques div {
+        max-width: 145px;
+    }
+
+    .inicio-visual {
+        min-height: 290px;
+    }
+
+    .visual-card {
+        width: min(85%, 300px);
+        min-height: 240px;
+    }
+
+    .visual-simbolo {
+        height: 145px;
+    }
+
+    .pesquisa-jogos {
+        gap: 6px;
+        padding-left: 10px;
+    }
+
+    .pesquisa-jogos button {
+        padding: 12px;
+        font-size: 0.82rem;
+    }
+
+    .adicionar-jogo {
+        padding: 18px;
+    }
+
+    .lista-controles {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .lista-controles input {
+        max-width: none;
+    }
+
+    .rodape {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
